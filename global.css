@@ -1,0 +1,12 @@
+topBar {
+	width: 100%;
+	height: auto;
+	background-color: blue;
+}
+
+clickable1 {
+	float: right;
+	height: 100%;
+	width: auto;
+	font-family: arial, calibri;
+}
