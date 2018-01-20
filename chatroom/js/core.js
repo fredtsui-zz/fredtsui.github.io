@@ -15,7 +15,7 @@
  *
  */
 
-var ws = new WebSocket('wss://' + location.host + '/groupcall');
+var ws = new WebSocket('wss://springboot-chatroomjava-env.us-east-1.elasticbeanstalk.com/groupcall');
 var participants = {};
 var name;
 
