@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
+body{
+	font-family: monospace, arial, calibri;
+	background-color: cornsilk;
+}
+
 div {
 	border-radius: 5px;
 }
@@ -8,10 +13,8 @@ div {
 div.topBar {
 	width: 100%;
 	padding: 0.2em;
-	background-color: #9ae5f5;
-	font-family: arial, calibri;
+	background-color: #70e1f3;
 	display: inline-block;
-	/*! position: relative; */
 }
 
 div.clickable1 {
@@ -44,6 +47,32 @@ div.menuBar{
 	width:70%;
 	height: 100%;
 }
+
+div.contentBox{
+	border: 1px solid black;
+	background-color: white;
+	margin-bottom:5px;
+	padding:10px;
+}
+
+span.title{
+	font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+span.subTitle{
+	font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: grey;
+}
+
+span.large{
+	font-size: 1.5em !important;
+	color: brown;
+}
+
 </style>
 <body>
 	
@@ -51,14 +80,41 @@ div.menuBar{
 	<div class="topBar">
 		<span style="color:white;font-size: 30px;">Yizhi (Fred) Cui</span>
 		<div class="menuBar">
-    <div class="clickable1">Hobbies</div>
-		<div class="clickable1">School Life</div>
+    	<div class="clickable1">Hobbies</div>
 		<div class="clickable1">Side Projects</div>
 		<div class="clickable1">Work Experience</div>
 		<div class="clickable1">About Me</div>
     </div></div>
-	<h1><a href="/Yizhi_Cui_Resume.pdf" download="">resume link</a></h1>
-	<p>This page is still under development.</p>
+	<h1></h1>
+	<div id="aboutMe" class="contentBox">
+		<span class="title large">About Me</span><br/>
+		Hi, my name is Yizhi (Fred) Cui, and I was raised in Beijing, China.<br/>
+		I am an 3rd year undergraduate at the University of Waterloo, pursuing Bachelor of Computer Science degree.<br />
+	</div>
+	<div id="sideProject" class="contentBox">
+		<span class="title large">Side Projects</span><br/>
+		<span class="title">Chamber Crawler 3k, CS 246</span><br/>
+		<span class="subTitle">Jan 2017 - Apr 2017</span><br/>
+		- A dungeon adventure game designed on C++ with usage of visitor and factory design patterns as well as the C++ Standard Template Library.<br>
+	</div>
+	<div id="workExp" class="contentBox">
+		<span class="title large">Work Experience</span><br/>
+		<span class="title">Software Developer @ 360 Education Labs</span><br/>
+		<span class="subTitle">Sept 2017 - Dec 2017</span><br/>
+		- Designed and implemented a HTML5-based video conference room application using React and WebRTC from scratch with minimal help<br />
+		- The application have several conferencing utilities such as document sharing, canvas drawing with curves, shapes, and texts.<br />
+		- By the end of the work, the product is used for company's weekly meeting (the team's product manager is in US), and is expected to used in production after recording and replaying being implemented.<br /><br/>
+		<span class="title">Support Software Developer @ Thirdeye Solutions</span><br/>
+		<span class="subTitle">May 2016 - Dec 2016</span><br/>
+		- Implemented an extra login page for two-factor authentication for a Java-web application<br/>
+		- Worked on HTML5 UI changes<br/>
+		- Used SQL queries to pull data from database and generate financial reports, statements and notices<br />
+	</div>
+	<div id="hobbies" class="contentBox">
+		<span class="title large">Hobbies</span><br/>
+		A large portion of my free time is usually spent in the gym, either playing sports such as table tennis or basketball, or working out. I have been training table tennis consistently for 6 years and have participated in the University's table tennis club for a couple of terms. Currently my favourite sport is basketball, I love watching NBA games and playing pick-up games with my friends at my university's gym. I also have been training powerlifting for 2 years, although my strength is still below average for a university student of my size, I love the feeling of accomplishment when I can see my progression.
+	</div>
+	<p><a href="/Yizhi_Cui_Resume.pdf" download="">resume link</a>This page is still under development.</p>
 
 
 
