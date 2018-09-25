@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-<script type="javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" />
 <style type="text/css">
 body{
 	font-family: monospace, arial, calibri;
@@ -76,25 +74,6 @@ span.large{
 }
 
 </style>
-
-<script>
-
-	var url = "http://localhost:8080";
-
-	function httpGet(theUrl)
-	{
-	    var xmlHttp = new XMLHttpRequest();
-	    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-	    xmlHttp.send( null );
-	    return xmlHttp.responseText;
-	}
-
-	document.onload = function(){
-
-	var ret = httpGet(url);
-	alert(ret);
-	}
-</script>
 
 <body>
 	
