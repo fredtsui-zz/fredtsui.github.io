@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+<script type="javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" />
 <style type="text/css">
 body{
 	font-family: monospace, arial, calibri;
@@ -74,6 +76,26 @@ span.large{
 }
 
 </style>
+
+<script>
+
+	var url = "http://localhost:8080";
+
+	function httpGet(theUrl)
+	{
+	    var xmlHttp = new XMLHttpRequest();
+	    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+	    xmlHttp.send( null );
+	    return xmlHttp.responseText;
+	}
+
+	document.onload = function(){
+
+	var ret = httpGet(url);
+	alert(ret);
+	}
+</script>
+
 <body>
 	
 
@@ -89,7 +111,7 @@ span.large{
 	<div id="aboutMe" class="contentBox">
 		<span class="title large">About Me</span><br/>
 		Hi, my name is Yizhi (Fred) Cui, and I was raised in Beijing, China.<br/>
-		I am an 3rd year undergraduate at the University of Waterloo, pursuing Bachelor of Computer Science degree.<br />
+		I am an 4th year undergraduate at the University of Waterloo, pursuing Bachelor of Computer Science degree.<br />
 	</div>
 	<div id="sideProject" class="contentBox">
 		<span class="title large">Side Projects</span><br/>
@@ -99,6 +121,11 @@ span.large{
 	</div>
 	<div id="workExp" class="contentBox">
 		<span class="title large">Work Experience</span><br/>
+		<span class="title">Software Developer @ TD Securities</span><br/>
+		<span class="subTitle">May 2018 - Aug 2018</span><br/>
+		- Migrated the front-end of a blockchain application to Angular JS<br />
+		- Implemented Java procedures to generate customized report from data in database<br />
+		- Development stack: Angular.Js for front end, Java and Node.js for back end<br />
 		<span class="title">Software Developer @ 360 Education Labs</span><br/>
 		<span class="subTitle">Sept 2017 - Dec 2017</span><br/>
 		- Designed and implemented a HTML5-based video conference room application using React and WebRTC from scratch with minimal help<br />
