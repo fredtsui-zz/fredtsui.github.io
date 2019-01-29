@@ -1,3 +1,8 @@
+body{
+	font-family: monospace, arial, calibri;
+	background-color: cornsilk;
+}
+
 div {
 	border-radius: 5px;
 }
@@ -5,10 +10,8 @@ div {
 div.topBar {
 	width: 100%;
 	padding: 0.2em;
-	background-color: #9ae5f5;
-	font-family: arial, calibri;
+	background-color: #70e1f3;
 	display: inline-block;
-	/*! position: relative; */
 }
 
 div.clickable1 {
@@ -42,3 +45,27 @@ div.menuBar{
 	height: 100%;
 }
 
+div.contentBox{
+	border: 1px solid black;
+	background-color: white;
+	margin-bottom:5px;
+	padding:10px;
+}
+
+span.title{
+	font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+span.subTitle{
+	font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: grey;
+}
+
+span.large{
+	font-size: 1.5em !important;
+	color: brown;
+}
